@@ -68,3 +68,13 @@ def all_snacks(yumyums)
   end
   return answer
 end
+
+def no_friends(circle)
+  nae_friends = Array.new
+  for no_mates in circle
+    if no_mates[:friends].empty?
+    nae_friends.push(no_mates[:name])
+    end
+  end
+  return nae_friends
+end
